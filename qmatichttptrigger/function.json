@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "signalR",
+      "name": "signalRMessages",
+      "hubName": "your-signalr-service-name",
+      "connectionStringSetting": "connection-string",
+      "direction": "out"
+    }
+  ],
+  "scriptFile": "../dist/qmatichttptrigger/index.js"
+}
